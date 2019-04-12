@@ -1,0 +1,181 @@
+@charset "utf-8";
+*{padding:0;margin:0;font-family:'微软雅黑'}
+blockquote, body, button, dd, div, dl, dt, form, h1, h2, h3, h4, h5, h6, input, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+html{width:100%;height:100%;color:#333;background:transparent;}
+body{width: 100%;height:100%;background: transparent;}
+body{
+	width:100%;height:100%;
+	background:url(bg-idx.jpg) no-repeat center bottom;
+}
+.wrap{width:1350px;margin:auto;height:320px}
+.wrap-idx{width:800px;margin:auto;height:320px;}
+.draw-levers li a{color:white;line-height:50px;text-decoration:none;}
+.wrap-idx .draw-levers li{width:33%;}
+.draw-levers li{
+	width:100px;
+	height:50px;
+	float:left;
+	list-style:none;
+	display:block;
+	text-align:center;
+	margin:20px 0;
+}
+.main-container{
+	text-align: center;
+	background:url(bg-idx.jpg) no-repeat center bottom;
+	background-size: 100% 100%;
+	min-height: 100%;
+	min-width: 1350px;
+}
+.draw-lever-box{
+    width: 100%;
+    height: 470px
+}
+.draw-lever-box li{
+	display:block;
+	float:left;
+	width:220px;
+	height:140px;
+	line-height:140px;
+	font-size:80px;
+	font-weight:bold;
+	text-align:center;
+	border-radius:10px;
+	background:url('luck-box.png') no-repeat center center;
+	margin:10px 0;
+}
+.ctrl-back-box{position:absolute;}
+.ctrl-back{
+	font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+.draw-lever-box li.max-luck-box{
+	display:block;
+	float:left;
+	width:392px;
+	height:244px;
+	line-height:244px;
+	font-size:150px;
+	font-weight:bold;
+	text-align:center;
+	border-radius:10px;
+	background:url('max-luck-box.png') no-repeat center center;
+	margin:10px 0;
+}
+
+
+.ctrl-box{
+	text-align:right;
+	clear:both;    
+	position: absolute;
+    bottom: 0;
+    right: 0;}
+.ctrl-box .ctrl-btn{
+	width: 70px;
+    height: 28px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 0;
+    margin-right:30px;
+    background: #d28626;
+}
+.luck-boxs{
+	width:100%;
+}
+.luck-box{
+	width:220px;
+	height:140px;
+	line-height:140px;
+	margin:auto;
+	font-size:80px;
+	font-weight:bold;
+	text-align:center;
+	border-radius:10px;
+	background:url('luck-box.png') no-repeat center center;
+}
+
+.draw-setting{width:800px;margin:20px auto;
+   position: fixed;
+   left: 50%;
+   top: 50%;
+   margin-left: -400px;
+   height: 500px;
+   margin-top:-300px;
+  	background: #fff;
+   filter:alpha(opacity=90); /*IE*/
+	-moz-opacity:0.9; /*MOZ , FF*/
+	opacity:0.9; /*CSS3, FF1.5*/
+    clear: both;
+    overflow-x: hidden;
+    padding:20px;
+ }
+.setting-box{}
+.ipt{width:150px;height: 36px;line-height: 36px;
+    line-height: 36px\9;
+    border: 1px solid #999;
+    background-color: #fff;
+    border-radius: 2px;padding-left: 10px;
+}
+.layui-btn {
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 18px;
+    background-color: #009688;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    opacity: .9;
+    filter: alpha(opacity=90);
+}
+.layui-btn-primary {
+    border: 1px solid #C9C9C9;
+    background-color: #fff;
+    color: #555;
+}
+.layui-btn-normal {
+    background-color: #1E9FFF;
+}
+.layui-btn-small {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    font-size: 12px;
+}
+.layui-btn-danger {
+    background-color: #FF5722;
+}
+.group-box{margin:10px 0;}
+table.lst{margin-top:10px;width:100%;border-collapse: collapse;background:#eee;}
+table.lst thead tr{height:40px;color:white;background:#999;}
+table.lst tbody tr{height:30px;}
+table.lst tbody tr.odd{background:#ccc;}
+table.lst td{padding:8px;}
+.lst-content table.lst{margin-top:0;}
+.lst-content table.lst thead tr{height:0px;}
+.lst-content table.lst thead tr td{padding:0;font-size:0;height:0px;}
+.lst-content{height:300px;overflow-y:auto;}
+.group-form{margin:20px;width:90%;}
+.group-form tr{height:50px;}
+.cred{color:red;}
+.lst tr{height:50px;}
+.none{display:none;}
+.pd20{padding:20px}
+.pond-box{padding-bottom:0;}
+.show-luck-nums li{
+	width:50px;
+	height:30px;
+	float:left;
+	list-style:none;
+	display:block;
+	text-align:center;
+	margin:5px 0;
+}

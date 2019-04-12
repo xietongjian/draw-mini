@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>亚厦股份 - 抽奖活动</title>
+    <script src="img/jquery-1.8.3.min.js"></script>
+    <script src="img/layer/layer.js"></script>
+    <link rel="stylesheet" href="img/index.css">
+    <script src="img/index.js"></script>
+    <script>
+    	// 加载
+    	$(function(){
+    		setTimeout(function(){
+			    Manager.init();
+    		}, 10);
+    	});
+    </script>
+</head>
+<body>
+	<div class="draw-setting">
+		<div class="group-box">
+			<div>
+				<a href="javascript:void(0);" class="jsInitPond layui-btn layui-btn-normal">初始化奖池</a>&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="javascript:void(0);" class="jsAddGroup layui-btn layui-btn-normal">添加分组</a>&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="javascript:void(0);" class="jsViewPond layui-btn layui-btn-normal">查看奖池</a>
+			</div>
+			<div class="lst">
+				<table class="jsGroupList lst">
+					<thead>
+						<td>组名</td>
+						<td>号码数</td>
+						<td>中奖个数</td>
+						<td width="200">操作</td>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="jsAddGroupBox none pd20">
+		<table class="group-form" >
+			<tr>
+				<td align="right"><span class="cred">*</span>&nbsp;组名：</td>
+				<td><input class="ipt jsGroupName" type="text" value="" maxlength="20" /></td>
+			</tr>
+			<tr>
+				<td align="right"><span class="cred">*</span>&nbsp;号码数：</td>
+				<td><input class="ipt jsGroupNum" type="text" value="" maxlength="2" /></td>
+			</tr>
+		</table>
+	</div>
+	
+	<div class="jsAddPondBox none pd20">
+		<table class="group-form" >
+			<tr>
+				<td align="right"><span class="cred">*</span>&nbsp;开始号码：</td>
+				<td><input class="ipt jsMinNum" type="text" value="1" maxlength="5" /></td>
+			</tr>
+			<tr>
+				<td align="right"><span class="cred">*</span>&nbsp;结束号码：</td>
+				<td><input class="ipt jsMaxNum" type="text" value="10" maxlength="5"/></td>
+			</tr>
+		</table>
+	</div>
+	
+	
+	<div class="jsViewPondBox none">
+		<div class="lst pond-box pd20">
+			<a href="javascript:void(0)" class="jsAllPond layui-btn layui-btn-small" >所有</a>
+			<a href="javascript:void(0)" class="jsViewLuckNum layui-btn layui-btn-small layui-btn-primary" >已中奖</a>
+			<a href="javascript:void(0)" class="jsViewNoLuckNum layui-btn layui-btn-small layui-btn-primary" >未中奖</a>
+			<table class="lst">
+				<thead>
+					<td width="30%">号码</td>
+					<td width="30%">所属组</td>
+					<td width="40%">状态</td>
+				</thead>
+			</table>
+			<div class="lst-content">
+				<table class="jsPondList lst">
+					<thead>
+						<td width="30%">&nbsp;</td>
+						<td width="30%">&nbsp;</td>
+						<td width="40%">&nbsp;</td>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	
+	<div class="jsLuckResultBox">
+		<ul class="show-luck-nums jsShowLuckNms">
+			
+		</ul>
+	</div>
+	
+	
+</body>
+</html>
